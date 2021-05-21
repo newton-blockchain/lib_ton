@@ -45,7 +45,7 @@ constexpr auto kWalletMainListKey = Storage::Cache::Key{ 1ULL, 2ULL };
 }
 
 [[nodiscard]] QString ConvertLegacyTestBlockchainName(const QString &name) {
-	return (name == "mainnet") ? "mainnet-test" : name;
+	return name;
 }
 
 TLstorage_Bool Serialize(const bool &data);
