@@ -185,7 +185,7 @@ struct DecryptPasswordGood {
 };
 
 struct Update {
-	std::variant<
+    base::variant<
 		SyncState,
 		LiteServerQuery,
 		ConfigUpgrade,
